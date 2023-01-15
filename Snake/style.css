@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #282528;
+    color: #f29544;
+    font-family: "Sofia Sans", Arial, Helvetica, sans-serif;
+}
+
+.canvas{
+    border: 2px solid #f29544;
+    padding: 20px;
+    border-radius: 20px;
+    height: 650px;
+    width: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.289);
+}
+
+.canvas > .title{
+    /* content: "Hello"; */
+    font-size: 35px;
+    text-align: center;
+}
+
+.canvas > .game_canvas{
+    border: 2px solid#f29544;
+    /* padding: 20px; */
+    height: 500px;
+    position: relative;
+}
+
+.canvas > .score{
+    text-align: center;
+    font-size: 30px;
+}
+
+.canvas > .game_canvas > .snake{
+    height: 18px;
+    width: 18px;
+    background: #f29544;
+    margin: 3px;
+    position: absolute;
+}
+
+.canvas >.game_canvas > .food{
+    background-image: url("images/food.png");
+    height: 20px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+button{
+    cursor: pointer;
+    background: #f29544;
+    color: #282528;
+    font-size: 20px;
+    border: 1px solid #282528;
+    padding: 5px;
+    border-radius: 5px;
+}
